@@ -173,7 +173,8 @@
             </svg>
             : trungdungtrafaco@gmail.com</p>
         </div>
-        <form action="mailto:endou.tenma40@gmail?subject=newCustomer" id="contact-form" enctype="text/plain" method="post">
+        <form action="send_email.php" id="contact-form"  method="POST">
+          
             <div class="form-group" id="form-name">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Your name goes here" required>
@@ -182,10 +183,10 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Your email goes here" required>
             </div>
-            <!-- <div class="form-group">
+            <div class="form-group">
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-            </div> -->
+            </div>
             <button type="submit" class="form-button flex" id="form-button">Get a Quote
               <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0-8.029-4.46a2 2 0 0 0-1.942 0L3 8m18 0-9 6.5L3 8"/>
