@@ -1,0 +1,48 @@
+/* Hero section */
+#headline {
+  font-family: 'Raleway', serif;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.red-theme {
+  color:red;
+
+}
+
+.text-content {
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+#hero .text-content h1 {
+  font-family: 'Raleway', serif;
+  font-size: 4.6rem;
+  line-height: 1.2;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.text-content p {
+  font-size: 2rem;
+  font-family: 'Roboto-Slab', sans-serif;
+}
+
+#hero {
+  height: 70vh;
+  padding: 2rem;
+  display: flex;
+  width: 100%;
+}
+
+#hero button {
+  margin-top: 10px;
+}
+
+.hero-img {
+  width: auto;
+  height: 61vh;
+  object-fit: cover;
+}

@@ -1,0 +1,92 @@
+section #about {
+  height: 70vh;
+  
+}
+
+.carousel-container {
+  width: 100%;
+  padding-block: 1rem 2rem;
+  margin: 1rem 2rem;
+  overflow-x: auto;
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 14px;
+  width: calc(100% - 48px);
+}
+
+.carousel-container::-webkit-scrollbar-track {
+  background: #b1b3b399;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background: #fce406;
+}
+
+.carousel-container::-webkit-scrollbar-track-piece:start {
+  background: #fce406;
+}
+
+.carousel-slide {
+  height: 60vh;
+  flex: 1 0 30%;
+  aspect-ratio: 16/9;
+  flex-flow: column nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  background-color: #fefdff;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+.slide-text {
+  font-family: 'Tarviraj', serif;
+  padding: 1rem;
+  position: absolute;
+  font-size: 3rem;
+  background: rgba( 18, 16, 10, 0.7 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 9px );
+  -webkit-backdrop-filter: blur( 9px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 40%;
+  height: 100%;
+  color: #fefdff;
+}
+
+.highlight {
+  color: #cf0200;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: inherit;
+  font-weight: bolder;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(gold, gold);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  transition: background-size .7s, background-position .5s ease-in-out;
+}
+span:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+.smaller {
+  font-size: 2rem;
+}
+
+
+@media (max-width: 600px) {
+  .carousel-slide {
+    flex: 1 0 90%;
+  }
+}
+
+
